@@ -25,7 +25,7 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" style= "padding: 0px; margin:0px">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -46,13 +46,18 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li> -->
-            <input type="text" name="search" placeholder="Search.." width="13px">
+            <!-- <input type="text" name="search" placeholder="Search.." width="13px"> -->
+            <div class="search" style="position:relative;left:-450px; padding-top: 8px">
+              <input type="text" class="searchTerm" style= "font-size: 80%; font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif" placeholder="What are you looking for?">
+              
+           </div>
+          <div style="position:relative;left:-145px; padding-top: 8px;"><button type="submit" class="searchButton"> <i class="fa fa-search"></i></button></div>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Sign Up</a>
-            </li>
+                <a class="nav-link js-scroll-trigger" href="#contact">SignUp</a>
+              </li>
           </ul>
         </div>
       </div>
@@ -62,9 +67,30 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Find your fix</div>
-          <!-- <div class="intro-heading text-uppercase">It's Nice To Meet You</div> -->
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Find</a>
+            <div class = "container">
+                <div class="wrapper">
+                  <form action="" method="post" name="Login_Form" class="form-signin">       
+                      <h3 class="form-signin-heading">Find your fix</h3>
+                      <hr class="colorgraph"><br>
+                      <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Type of fix
+                          <span class="caret" item-width="100px"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Repair</a></li>
+                            <li><a href="#">Renovation</a></li>
+                            <li><a href="#">Installment</a></li>
+                            <li><a href="#">Painters</a></li>
+                            
+                          </ul>
+                        </div>
+
+                      <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
+                      <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>     		  
+                     
+                      <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Find</button>  			
+                  </form>			
+              </div>
+              </div>
         </div>
       </div>
     </header>
